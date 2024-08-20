@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { Snackbar, Alert } from "@mui/material";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -17,6 +18,9 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [openSnackbar, setOpenSnackbar] = useState(false);
+  const [alertType, setAlertType] = useState("success");
+  const [alertMessage, setAlertMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -43,7 +47,10 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you! I will get back to you as soon as possible.");
+          setAlertType("success");
+          setAlertMessage(
+            "Thank you! I will get back to you as soon as possible."
+          );
           setForm({
             name: "",
             email: "",
@@ -52,10 +59,18 @@ const Contact = () => {
         },
         (error) => {
           setLoading(false);
+          setAlertType("error");
+          setAlertMessage("Something went wrong!");
           console.log(error);
-          alert("Something went wrong");
         }
-      );
+      )
+      .finally(() => {
+        setOpenSnackbar(true);
+      });
+  };
+
+  const handleCloseSnackbar = () => {
+    setOpenSnackbar(false);
   };
 
   return (
@@ -80,8 +95,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
-              className="bg-tertiary  py-4
-              px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
           {/* email */}
@@ -93,8 +107,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email address?"
-              className="bg-tertiary  py-4
-              px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
           {/* message */}
@@ -106,8 +119,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="What you want to say?"
-              className="bg-tertiary  py-4
-              px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
           <button
@@ -124,6 +136,21 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+
+      {/* Snackbar for alerts */}
+      <Snackbar
+        open={openSnackbar}
+        autoHideDuration={6000}
+        onClose={handleCloseSnackbar}
+      >
+        <Alert
+          onClose={handleCloseSnackbar}
+          severity={alertType}
+          sx={{ width: "100%" }}
+        >
+          {alertMessage}
+        </Alert>
+      </Snackbar>
     </div>
   );
 };
