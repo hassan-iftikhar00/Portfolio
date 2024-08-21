@@ -18,7 +18,8 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Full Stack Developer committed to creating innovative, user-focused
-            web solutions. Let&apos;s build something extraordinary.
+            web solutions. <br className="hidden md:block" /> Let&apos;s build
+            something extraordinary !!!
           </p>
         </div>
       </div>
