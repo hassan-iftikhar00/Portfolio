@@ -359,8 +359,7 @@ const projects = [
     ],
     image: ecommerce,
     source_code_link: "https://github.com/hassan-iftikhar00/eCommerce-Website",
-    website_link:
-      "https://hassan-iftikhar00.github.io/eCommerce-Website/index.html",
+    website_link: "https://ecommercehsn.vercel.app/",
   },
 ];
 
