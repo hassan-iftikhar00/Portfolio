@@ -23,7 +23,7 @@ const Resume = () => {
           download="Hassan_Iftikhar_Resume.pdf"
           className="mt-4 bg-[#915eff] text-white py-2 px-6 rounded-lg shadow-lg hover:bg-[#7b4de3] transition-all"
         >
-          Download My CV
+          Download My Resume
         </a>
       </div>
       {/* cards */}
