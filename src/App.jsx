@@ -8,6 +8,7 @@ import {
   Navbar,
   Tech,
   Works,
+  Resume,
   StarsCanvas,
 } from "./components";
 
@@ -19,7 +20,9 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
+        <Resume />
         <About />
+
         <Experience />
         <Tech />
         <Works />
