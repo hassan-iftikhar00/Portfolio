@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import { AiOutlineDownload } from "react-icons/ai";
 import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
 import PDFViewer from "./PDFViewer";
@@ -21,8 +21,9 @@ const Resume = () => {
         <a
           href={pdfUrl}
           download="Hassan_Iftikhar_Resume.pdf"
-          className="mt-4 bg-[#915eff] text-white py-2 px-6 rounded-lg shadow-lg hover:bg-[#7b4de3] transition-all"
+          className="mt-4 bg-[#915eff] text-lg text-white py-2 px-6 rounded-lg shadow-lg hover:bg-[#7b4de3] transition-all flex flex-row "
         >
+          <AiOutlineDownload size={27} className="mx-3" />
           Download My Resume
         </a>
       </div>
