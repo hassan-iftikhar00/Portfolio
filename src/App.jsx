@@ -10,6 +10,8 @@ import {
   Works,
   Resume,
   StarsCanvas,
+  GitHubProjects,
+  FiverrProjects,
 } from "./components";
 
 const App = () => {
@@ -20,14 +22,15 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
-        <Resume />
+        <Resume className="pt-24" />
+        <GitHubProjects />
+        <FiverrProjects />
         <About />
-
         <Experience />
         <Tech />
         <Works />
         <Feedbacks />
-        <div className=" relative z-0">
+        <div className="relative z-0">
           <Contact />
           <StarsCanvas />
         </div>

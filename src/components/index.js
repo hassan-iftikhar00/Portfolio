@@ -14,6 +14,11 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import Resume from "./Resume";
 import PDFViewer from "./PDFViewer";
+import GitHubStats from "./GitHubStats";
+import GitHubProjects from "./GitHubProjects"; // Add this import
+import GitHubSticker from "./GitHubSticker"; // Add this import
+import FiverrProjects from "./FiverrProjects";
+import FiverrSticker from "./FiverrSticker";
 
 export {
   Hero,
@@ -30,4 +35,9 @@ export {
   StarsCanvas,
   Resume,
   PDFViewer,
+  GitHubStats,
+  GitHubProjects, // Add this export
+  GitHubSticker, // Add this export
+  FiverrProjects,
+  FiverrSticker,
 };

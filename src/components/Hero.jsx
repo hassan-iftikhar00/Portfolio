@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive"; // Add this import
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+
 const Hero = () => {
+  const isLowEndDevice = useMediaQuery({ maxWidth: 768 }); // Define the media query
+
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
@@ -22,7 +26,16 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <ComputersCanvas />
+      {!isLowEndDevice && <ComputersCanvas />}{" "}
+      {/* Conditionally render ComputersCanvas */}
+      {isLowEndDevice && (
+        <div className="absolute bottom-40 w-full text-center">
+          <p className="neon-text p-3">
+            You are missing something!!! Switch to a high-end device to see the
+            3D model.
+          </p>
+        </div>
+      )}
       <div className="absolute bottom-10 md:bottom-4  w-full flex justify-center items-center">
         <a href="#resume">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
