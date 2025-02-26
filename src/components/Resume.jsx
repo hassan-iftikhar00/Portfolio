@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { AiOutlineDownload } from "react-icons/ai";
+import { Helmet } from "react-helmet";
 import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
 import PDFViewer from "./PDFViewer";
@@ -11,6 +12,11 @@ const Resume = () => {
   // const scaleValue = isSmallDevice ? 0.4 : 1.3;
   return (
     <>
+      <Helmet>
+        <title>Hassan Iftikhar - Resume | Full Stack Developer</title>
+        <meta name="description" content="View and download Hassan Iftikhar's resume. Experienced Full Stack Developer specializing in MERN and MEVN stacks." />
+        <meta name="keywords" content="Resume, CV, Full Stack Developer, Web Development, Hassan Iftikhar" />
+      </Helmet>
       <motion.div variants={textVariant()} className="mt-40">
         <p className={styles.sectionSubText}>
           Ready to explore my professional journey? Check out my

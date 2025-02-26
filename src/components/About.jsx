@@ -1,6 +1,7 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 import { styles } from "../styles";
 import { services } from "../constants";
@@ -32,6 +33,11 @@ const About = () => {
 
   return (
     <>
+      <Helmet>
+        <title>About Hassan Iftikhar - Full Stack Developer</title>
+        <meta name="description" content="Learn about Hassan Iftikhar's experience and expertise in full stack development, including MERN and MEVN stacks." />
+        <meta name="keywords" content="About, Full Stack Developer, Web Development, Hassan Iftikhar, MERN Stack, MEVN Stack" />
+      </Helmet>
       {/* headings */}
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
