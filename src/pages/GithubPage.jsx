@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-undef */
+import Head from "next/head"; // Add this import
 import Image from "next/image";
 import GitHubCalendar from "react-github-calendar";
 import RepoCard from "../components/RepoCard";
@@ -16,6 +17,38 @@ const GithubPage = ({ repos, user }) => {
 
   return (
     <>
+      <Head>
+        <title>{user.login}'s GitHub Profile</title>
+        <meta
+          name="description"
+          content={`Check out ${user.login}'s GitHub profile and repositories.`}
+        />
+        <meta
+          name="keywords"
+          content="GitHub, repositories, projects, developer, portfolio"
+        />
+        <meta name="author" content={user.login} />
+        <meta property="og:title" content={`${user.login}'s GitHub Profile`} />
+        <meta
+          property="og:description"
+          content={`Check out ${user.login}'s GitHub profile and repositories.`}
+        />
+        <meta
+          property="og:image"
+          content={user.avatar_url || "/default-avatar.png"}
+        />
+        <meta property="og:url" content={`https://github.com/${user.login}`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${user.login}'s GitHub Profile`} />
+        <meta
+          name="twitter:description"
+          content={`Check out ${user.login}'s GitHub profile and repositories.`}
+        />
+        <meta
+          name="twitter:image"
+          content={user.avatar_url || "/default-avatar.png"}
+        />
+      </Head>
       <div className={styles.user}>
         <div>
           <Image
