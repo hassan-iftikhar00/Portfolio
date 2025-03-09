@@ -77,9 +77,15 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Hassan Iftikhar - Full Stack Developer</title>
-        <meta name="description" content="Get in touch with Hassan Iftikhar for your web development needs. Available for freelance projects and collaborations." />
-        <meta name="keywords" content="Contact, Full Stack Developer, Web Development, Hassan Iftikhar" />
+        <title>Hassan Iftikhar - Full Stack Developer</title>
+        <meta
+          name="description"
+          content="Get in touch with Hassan Iftikhar for your web development needs. Available for freelance projects and collaborations."
+        />
+        <meta
+          name="keywords"
+          content="Contact, Full Stack Developer, Web Development, Hassan Iftikhar"
+        />
       </Helmet>
       <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
         <motion.div
