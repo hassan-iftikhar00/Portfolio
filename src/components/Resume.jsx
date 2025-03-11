@@ -14,8 +14,14 @@ const Resume = () => {
     <>
       <Helmet>
         <title>Hassan Iftikhar - Resume | Full Stack Developer</title>
-        <meta name="description" content="View and download Hassan Iftikhar's resume. Experienced Full Stack Developer specializing in MERN and MEVN stacks." />
-        <meta name="keywords" content="Resume, CV, Full Stack Developer, Web Development, Hassan Iftikhar" />
+        <meta
+          name="description"
+          content="View and download Hassan Iftikhar's resume. Experienced Full Stack Developer specializing in MERN and MEVN stacks."
+        />
+        <meta
+          name="keywords"
+          content="Resume, CV, Full Stack Developer, Web Development, Hassan Iftikhar"
+        />
       </Helmet>
       <motion.div variants={textVariant()} className="mt-40">
         <p className={styles.sectionSubText}>
