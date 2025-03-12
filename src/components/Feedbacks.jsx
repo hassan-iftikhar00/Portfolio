@@ -6,12 +6,20 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 
+const countryFlags = {
+  USA: "🇺🇸",
+  Canada: "🇨🇦",
+  UK: "🇬🇧",
+  // Add more countries and their flags here
+};
+
 const FeedbackCard = ({
   index,
   testimonial,
   name,
-  designation,
+  country,
   company,
+  fiverr,
   image,
 }) => (
   <motion.div
@@ -28,9 +36,15 @@ const FeedbackCard = ({
           <p className="text-white font-medium text-[16px]">
             <span className="blue-text-gradient">@</span> {name}
           </p>
-          <p className="mt-1 text-secondary text-[12px]">
-            {designation} {company}
-          </p>
+          <div className="mt-1 text-secondary text-[12px] flex items-center">
+            <img
+              src={country}
+              alt={`flag_of_${name}`}
+              className="w-5 h-5 mr-2 object-contain"
+            />
+            <span>{company}</span>
+          </div>
+          <p className="mt-1 text-secondary text-[12px]">{fiverr}</p>
         </div>
 
         <img

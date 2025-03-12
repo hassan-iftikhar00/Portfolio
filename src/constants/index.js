@@ -22,6 +22,11 @@ import {
   sass,
   bootstrap,
   vuex,
+  peki,
+  bank,
+  liveAutos,
+  hotel,
+  organic,
 } from "../assets";
 
 export const navLinks = [
@@ -54,7 +59,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Three.js Developer",
+    title: "Node.js Developer",
     icon: creator,
   },
   {
@@ -66,60 +71,6 @@ const services = [
     icon: mobile,
   },
 ];
-// const technologies = [
-//   {
-//     name: "HTML 5",
-//     icon: html,
-//   },
-//   {
-//     name: "CSS 3",
-//     icon: css,
-//   },
-//   {
-//     name: "JavaScript",
-//     icon: javascript,
-//   },
-//   {
-//     name: "TypeScript",
-//     icon: typescript,
-//   },
-//   {
-//     name: "React JS",
-//     icon: reactjs,
-//   },
-//   {
-//     name: "Redux Toolkit",
-//     icon: redux,
-//   },
-//   {
-//     name: "Tailwind CSS",
-//     icon: tailwind,
-//   },
-//   {
-//     name: "Node JS",
-//     icon: nodejs,
-//   },
-//   {
-//     name: "MongoDB",
-//     icon: mongodb,
-//   },
-//   {
-//     name: "Three JS",
-//     icon: threejs,
-//   },
-//   {
-//     name: "git",
-//     icon: git,
-//   },
-//   {
-//     name: "figma",
-//     icon: figma,
-//   },
-//   {
-//     name: "docker",
-//     icon: docker,
-//   },
-// ];
 
 const technologies = [
   {
@@ -229,31 +180,96 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I was amazed at how efficiently the web application was developed, perfectly matching our business needs. The attention to detail was exceptional.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Working with Hassan was a great experience! He integrated backend with mongoDB and cloudinary along with admin panel in my nextjs web app. The delivery was high quality, and exactly how i described. Hoping to work with him again!",
+    name: "Aydin",
+    country: "https://flagcdn.com/tr.svg",
+    company: "Turkey",
+    image: "https://randomuser.me/api/portraits/lego/2.jpg",
+    fiverr: "Fiverr",
   },
   {
     testimonial:
-      "Hassan is a true professional who goes above and beyond to ensure the project’s success. The final product exceeded all expectations.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "It was great to work with Hassan. He is smart person easy to deal with and was able to understand the task quickly and deliver this without wasting any time. Appreciate their workmanship.",
+    name: "Haiderjee",
+    country: "https://flagcdn.com/us.svg",
+    company: "United States",
+    image: "https://randomuser.me/api/portraits/lego/3.jpg",
+    fiverr: "Fiverr",
   },
   {
     testimonial:
-      "Thanks to the innovative design and functionality, our platform saw a significant boost in user engagement. The results speak for themselves!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "It was a wonderful experience working with Hassan. I loved his professionalism in understanding the requirements and delivering the order before time. I will definitely recommend him and look forward to working with him in future as well.",
+    name: "Atif",
+    country: "https://flagcdn.com/ca.svg",
+    company: "Canada",
+    image: "https://randomuser.me/api/portraits/lego/4.jpg",
+    fiverr: "Fiverr",
+  },
+  {
+    testimonial: "Excellent communication skills. Very good at what he does",
+    name: "Augustus",
+    country: "https://flagcdn.com/gh.svg",
+    company: "Ghana",
+    image: "https://randomuser.me/api/portraits/lego/5.jpg",
+    fiverr: "Fiverr",
+  },
+  {
+    testimonial: "It was great working with Hassan.",
+    name: "Viren",
+    country: "https://flagcdn.com/gb.svg",
+    company: "United Kingdom",
+    image: "https://randomuser.me/api/portraits/lego/6.jpg",
+    fiverr: "Fiverr",
+  },
+  {
+    testimonial: "Best Value for money. Very cheap but very good quality.",
+    name: "Shehzad",
+    country: "https://flagcdn.com/gb.svg",
+    company: "United Kingdom",
+    image: "https://randomuser.me/api/portraits/lego/1.jpg",
+    fiverr: "Fiverr",
   },
 ];
 
 const projects = [
+  {
+    name: "School Management System",
+    description:
+      "Developed a complete school registration and management system for Peki Senior High School with student and admin portals, handling registration, payments, SMS notifications, authentication, and a complete database structure.",
+    tags: [
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "Node.js", color: "green-text-gradient" },
+      { name: "MongoDB", color: "pink-text-gradient" },
+      { name: "JWT", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "green-text-gradient" },
+      { name: "Hubtle API", color: "pink-text-gradient" },
+    ],
+    image: peki,
+    source_code_link:
+      "https://github.com/hassan-iftikhar00/Peki-Senior-High-School",
+    website_link: "https://admissions.pekishs.com/",
+  },
+  {
+    name: "Bank Website",
+    description:
+      "Integrated backend to a banking platform with a secure admin panel, featuring authentication, blog management, image uploads and hosting, and language-specific filtering on front end.",
+    tags: [
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "Node.js", color: "green-text-gradient" },
+      { name: "MongoDB", color: "pink-text-gradient" },
+      { name: "Tailwind CSS", color: "blue-text-gradient" },
+    ],
+    image: bank,
+    source_code_link: "https://github.com/hassan-iftikhar00/appdf-main",
+    website_link: "https://appdf-main.vercel.app/",
+  },
+  {
+    name: "LiveAutos - A car Listing Platform",
+    description:
+      "Enhanced a UK-based car listing platform by optimizing search functionality, developing multi-step car listing flow, and integrating UK vehicle data APIs. Developed multiple frontend sections and legal pages, advanced filtering, and detailed car pages, while improving responsiveness.",
+    tags: [{ name: "MERN", color: "blue-text-gradient" }],
+    image: liveAutos,
+  },
   {
     name: "B2B Agent Portal",
     description:
@@ -343,6 +359,31 @@ const projects = [
     image: ecommerce,
     source_code_link: "https://github.com/hassan-iftikhar00/eCommerce-Website",
     website_link: "https://ecommercehsn.vercel.app/",
+  },
+  {
+    name: "Organic Food Store",
+    description:
+      "This is a modern organic food online store with a sleek and user-friendly design. It features intuitive navigation, product filtering, and a seamless shopping experience. With high-quality visuals, responsive design, and smooth animations, it ensures an engaging and hassle-free way to shop for fresh, organic products.",
+    tags: [
+      { name: "HTML", color: "blue-text-gradient" },
+      { name: "CSS", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
+    ],
+    image: organic,
+    source_code_link: "https://github.com/hassan-iftikhar00/organic-food-store",
+    website_link: "https://organic-food-stop.vercel.app/",
+  },
+  {
+    name: "GoldenCedarHotel - A Hotel Website",
+    description:
+      "This hotel web application showcases the hotel’s online presence with a user-friendly landing page, secure login and signup pages, and a profile page for guests to manage their accounts. Built with React and Tailwind CSS, it features a mobile-responsive design, ensuring an intuitive experience across all devices and enhancing the booking process.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "green-text-gradient" },
+    ],
+    image: hotel,
+    source_code_link: "https://github.com/hassan-iftikhar00/GoldenCedarHotel",
+    website_link: "https://goldencedarhotel.vercel.app/",
   },
 ];
 

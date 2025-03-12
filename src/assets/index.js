@@ -51,6 +51,11 @@ import coordinator from "./company/coordinator.png";
 import PointsPerk from "./PointsPerk.png";
 import LandingPage from "./LandingPage.png";
 import ecommerce from "./ecommerce.png";
+import peki from "./peki.png";
+import bank from "./bank.png";
+import liveAutos from "./liveAutos.png";
+import hotel from "./hotel.png";
+import organic from "./organic.png";
 
 export {
   logo,
@@ -103,4 +108,9 @@ export {
   api,
   dotnet,
   vuex,
+  peki,
+  bank,
+  liveAutos,
+  hotel,
+  organic,
 };
