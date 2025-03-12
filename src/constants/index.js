@@ -184,7 +184,7 @@ const testimonials = [
     name: "Aydin",
     country: "https://flagcdn.com/tr.svg",
     company: "Turkey",
-    image: "https://randomuser.me/api/portraits/lego/2.jpg",
+    image: "https://avatar.iran.liara.run/public/21",
     fiverr: "Fiverr",
   },
   {
@@ -193,7 +193,7 @@ const testimonials = [
     name: "Haiderjee",
     country: "https://flagcdn.com/us.svg",
     company: "United States",
-    image: "https://randomuser.me/api/portraits/lego/3.jpg",
+    image: "https://avatar.iran.liara.run/public/41",
     fiverr: "Fiverr",
   },
   {
@@ -202,7 +202,7 @@ const testimonials = [
     name: "Atif",
     country: "https://flagcdn.com/ca.svg",
     company: "Canada",
-    image: "https://randomuser.me/api/portraits/lego/4.jpg",
+    image: "https://avatar.iran.liara.run/public/26",
     fiverr: "Fiverr",
   },
   {
@@ -210,7 +210,7 @@ const testimonials = [
     name: "Augustus",
     country: "https://flagcdn.com/gh.svg",
     company: "Ghana",
-    image: "https://randomuser.me/api/portraits/lego/5.jpg",
+    image: "https://avatar.iran.liara.run/public/45",
     fiverr: "Fiverr",
   },
   {
@@ -218,7 +218,7 @@ const testimonials = [
     name: "Viren",
     country: "https://flagcdn.com/gb.svg",
     company: "United Kingdom",
-    image: "https://randomuser.me/api/portraits/lego/6.jpg",
+    image: "https://avatar.iran.liara.run/public/15",
     fiverr: "Fiverr",
   },
   {
@@ -226,7 +226,7 @@ const testimonials = [
     name: "Shehzad",
     country: "https://flagcdn.com/gb.svg",
     company: "United Kingdom",
-    image: "https://randomuser.me/api/portraits/lego/1.jpg",
+    image: "https://avatar.iran.liara.run/public/23",
     fiverr: "Fiverr",
   },
 ];
