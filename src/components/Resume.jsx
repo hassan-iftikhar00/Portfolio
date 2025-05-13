@@ -7,7 +7,7 @@ import PDFViewer from "./PDFViewer";
 import { SectionWrapper } from "../hoc";
 
 const Resume = () => {
-  const pdfUrl = "/CV/Hassan_Iftikhar_Resume.pdf";
+  const pdfUrl = "/CV/Hassan_Iftikhar_Resume.docx.pdf";
   // const isSmallDevice = useMediaQuery({ maxWidth: 768 });
   // const scaleValue = isSmallDevice ? 0.4 : 1.3;
   return (
