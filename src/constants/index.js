@@ -23,6 +23,7 @@ import {
   bootstrap,
   vuex,
   peki,
+  evoting,
   bank,
   liveAutos,
   hotel,
@@ -233,6 +234,22 @@ const testimonials = [
 
 const projects = [
   {
+    name: "School E-Voting System",
+    description:
+      "Developed a comprehensive e-voting platform [SaaS] for educational institutions with dual interfaces for voters and administrators. Features include secure authentication, real-time results, role-based access control, candidate management, voter registration with bulk import, detailed analytics, and multi-election architecture for complete data isolation between different voting events.",
+    tags: [
+      { name: "React.js", color: "blue-text-gradient" },
+      { name: "Node.js", color: "green-text-gradient" },
+      { name: "MongoDB", color: "pink-text-gradient" },
+      { name: "TypeScript", color: "blue-text-gradient" },
+      { name: "TailwindCSS", color: "green-text-gradient" },
+      { name: "JWT", color: "pink-text-gradient" },
+    ],
+    image: evoting,
+
+    website_link: "https://e-voting-pekiseniorhighschool.vercel.app/",
+  },
+  {
     name: "School Management System",
     description:
       "Developed a complete school registration and management system for Peki Senior High School with student and admin portals, handling registration, payments, SMS notifications, authentication, and a complete database structure.",
@@ -245,8 +262,7 @@ const projects = [
       { name: "Hubtle API", color: "pink-text-gradient" },
     ],
     image: peki,
-    source_code_link:
-      "https://github.com/hassan-iftikhar00/Peki-Senior-High-School",
+
     website_link: "https://admissions.pekishs.com/",
   },
   {

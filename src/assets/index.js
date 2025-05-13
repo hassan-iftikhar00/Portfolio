@@ -56,6 +56,7 @@ import bank from "./bank.png";
 import liveAutos from "./liveAutos.png";
 import hotel from "./hotel.png";
 import organic from "./organic.png";
+import evoting from "./evoting.png";
 
 export {
   logo,
@@ -70,6 +71,7 @@ export {
   close,
   css,
   docker,
+  evoting,
   figma,
   git,
   html,
